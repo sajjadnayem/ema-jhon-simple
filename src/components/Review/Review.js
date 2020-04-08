@@ -23,7 +23,7 @@ const Review = () => {
         //declaring cart state
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('http://localhost:4200/getProductsByKey',{
+        fetch('https://safe-forest-04045.herokuapp.com/getProductsByKey',{
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
